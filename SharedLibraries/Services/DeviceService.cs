@@ -15,7 +15,7 @@ namespace SharedLibraries.Services
 
         public static async Task SendMessageAsync(DeviceClient deviceClient)
         {
-            while (true)
+            
             {
                 var weatherdata = new TemperatureModel
                 {
@@ -29,7 +29,7 @@ namespace SharedLibraries.Services
 
 
                 Console.WriteLine($"Message sent: {json}");
-                await Task.Delay(60 * 1000);
+                
             }
         }
 
